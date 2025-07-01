@@ -1,85 +1,102 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kids</title>
-  <link rel="stylesheet" href="../css/kids.css"> <link rel="stylesheet" href="../css/default.css">
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projet E COMME</title>
+    <!-- Lien vers la feuille de style principale -->
+    <link rel="stylesheet" href="../css/kids.css"><link rel="stylesheet" href="../css/default.css">
+    <!-- Préconnexion pour accélérer le chargement des polices Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Importation des polices Inter et Playfair Display depuis Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Inclusion du script JavaScript principal en mode différé -->
+    <script defer src="../js/index.js"></script>
 </head>
 <body>
-
-  <!-- Header -->
-  <header class="navbar">
-    <div class="logo"><span>Kasyshop</span></div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#">HOMME</a></li>
-        <li><a href="#">FEMME</a></li>
-        <li><a href="#">KIDS</a></li>
-        <li><a href="#">UNISEX</a></li>
-        <li><a href="#">ACCESSOIRES</a></li>
-      </ul>
+    <!-- Navigation principale du site -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Logo du site -->
+            <div class="nav-logo">
+                <img src="image/logo-mini.png" alt="Mini logo" class="mini-logo">
+                <h2 class="logo-name">Kasyshop</h2>
+            </div>
+            <!-- Menu de navigation -->
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#HOMME" class="nav-link">HOMME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#FEMME" class="nav-link">FEMME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#UNISEX" class="nav-link">UNISEX</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#ENFANT" class="nav-link">ENFANT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#ACESSOIRE" class="nav-link">ACCESSOIRES</a>
+                </li>
+            </ul>
+            <!-- Bouton PANIER à droite -->
+            <button class="PANIER-btn">PANIER</button>
+            <!-- Bouton hamburger pour le menu mobile -->
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
     </nav>
-    <a href="#" class="cart-btn">PANIER</a>
-  </header>
-
-  <!-- Espace vide (bannière ou contenu principal) -->
-  <section class="main-content">
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="footer-container">
-      <div class="footer-section">
-        <p>Votre boutique de mode en ligne, tendance et accessible.</p>
-      </div>
-      <div class="footer-section">
-        <h4>Catégories</h4>
-        <ul>
-          <li><a href="#">Homme</a></li>
-          <li><a href="#">Femme</a></li>
-          <li><a href="#">Unisex</a></li>
-          <li><a href="#">kids</a></li>
-          <li><a href="#">Accessoires</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h4>À propos</h4>
-        <ul>
-          <li><a href="#">Notre histoire</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">FAQ</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h4>Suivez-nous</h4>
-        <ul>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Twitter</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025 . Tous droits réservés.</p>
-    </div>
-  </footer>
-
+ <!-- Footer du site -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <h2>Kasyshop</h2>
+                <p>Votre boutique de mode en ligne, tendance et accessible.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Catégories</h4>
+                    <ul>
+                        <li><a href="#HOMME">Homme</a></li>
+                        <li><a href="#FEMME">Femme</a></li>
+                        <li><a href="#UNISEX">Unisex</a></li>
+                        <li><a href="#ENFANT">Enfant</a></li>
+                        <li><a href="#ACESSOIRE">Accessoire</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>À propos</h4>
+                    <ul>
+                        <li><a href="#">Notre histoire</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Suivez-nous</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Kasyshop. Tous droits réservés.
+        </div>
+    </footer>
 </body>
 </html>
+

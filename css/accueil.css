@@ -1,0 +1,106 @@
+/* Sections avec image et texte */
+.feature-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    transition: background 0.3s;
+}
+.feature-section.reverse {
+    flex-direction: row-reverse;
+}
+.feature-img {
+    flex: 1 1 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.feature-img img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(1,154,236,0.15);
+    transition: transform 0.4s;
+}
+.feature-section:hover .feature-img img {
+    transform: scale(1.04) rotate(-2deg);
+}
+.feature-content {
+    flex: 1 1 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+}
+.feature-content h2 {
+    font-size: 2.2rem;
+    color: rgb(1, 154, 236);
+    margin-bottom: 10px;
+}
+.feature-content p {
+    font-size: 1.1rem;
+    color: #222;
+    margin-bottom: 18px;
+}
+.feature-btn {
+    width: fit-content;
+    background: rgb(1, 154, 236);
+    color: #fff !important;
+    border: none;
+    box-shadow: 0 2px 8px #019aec33;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+.feature-btn:hover {
+    background: #fff;
+    color: rgb(1, 154, 236) !important;
+    transform: scale(1.08);
+    border: 1.5px solid rgb(1, 154, 236);
+}
+
+/* Effets d'apparition */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s forwards;
+}
+.slide-in-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideInLeft 1s forwards;
+}
+.slide-in-right {
+    opacity: 0;
+    transform: translateX(50px);
+    animation: slideInRight 1s forwards;
+}
+@keyframes fadeInUp {
+    to { opacity: 1; transform: none; }
+}
+@keyframes slideInLeft {
+    to { opacity: 1; transform: none; }
+}
+@keyframes slideInRight {
+    to { opacity: 1; transform: none; }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .feature-section {
+        flex-direction: column !important;
+        gap: 24px;
+        padding: 40px 0;
+    }
+    .feature-img img {
+        max-width: 90vw;
+    }
+    .feature-content h2 {
+        font-size: 1.5rem;
+    }
+    
+}/* Espace en haut pour éviter que l'image ne passe sous la navbar fixe */
+.main-content {
+    padding-top: 90px;
+}
