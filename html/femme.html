@@ -27,28 +27,113 @@
   <section class="main-content">
 
 
-<!-- <style>.element2 {visibility:hidden};</style>
+<!-- <style>.element2 {visibility:hidden};.element3 {visibility:hidden};</style> -->
 <script type="text/javascript">
 function Cacher(element) { document.getElementById(element).style.visibility = "hidden";    }
 function Visible (element) { document.getElementById(element).style.visibility = "visible"; }
 function Toggle(element)
 {
-    if (document.getElementById(element) == document.getElementById('element')){
-        Visible('element');
+    if (document.getElementById(element) == document.getElementById('element1')){
+        Visible('element1');
+        Cacher('element2');
+        Cacher('element3');
+    }
+    else if (document.getElementById(element) == document.getElementById('element2')){
+        Visible('element2');
+        Cacher('element1');
+        Cacher('element3');
+    }
+    else if (document.getElementById(element) == document.getElementById('element3')){
+        Visible('element3');
+        Cacher('element1');
         Cacher('element2');
     }
-    else    {  
-        Visible('element2');   
-        Cacher('element');
+    else {
+        Visible('element1');
+        Visible('element2');
+        Visible('element3');
     }
 }
 window.onload = function () {Cacher('element2');    };
-</script> -->
-<a href="#" onclick="Toggle('element');">Afficher element 1</a>
+</script>
+<a href="#" onclick="Toggle('element1');">Afficher element 1</a>
 <a href="#" onclick="Toggle('element2');">Afficher element 2 </a>
-<div id="element">Element 1</div>
-<div id="element2">Element 2</div>
+<a href="#" onclick="Toggle('element3');">Afficher element 3 </a>
 
+<section class="elements">
+  <div id="element1">
+
+    <section class="produitscontainer">
+      <div class="produit">
+        <img src="../images/femme1.jpg" alt="Produit 1">
+        <h3>Produit 1</h3>
+        <p>Description du produit 1.</p>
+        <span class="prix">€29.99</span>
+      </div>
+      <div class="produit">
+        <img src="../images/femme2.jpg" alt="Produit 2">
+        <h3>Produit 2</h3>
+        <p>Description du produit 2.</p>
+        <span class="prix">€39.99</span>
+      </div>
+      <div class="produit">
+        <img src="../images/femme3.jpg" alt="Produit 3">
+        <h3>Produit 3</h3>
+        <p>Description du produit 3.</p>
+        <span class="prix">€49.99</span>
+      </div>  
+    </section>
+
+  </div>
+  <div id="element2">
+
+    <section class="produitscontainer">
+      <div class="produit">
+        <img src="../images/femme1.jpg" alt="Produit 1">
+        <h3>Produit 1</h3>
+        <p>Description du produit 1.</p>
+        <span class="prix">€29.99</span>
+      </div>
+      <div class="produit">
+        <img src="../images/femme2.jpg" alt="Produit 2">
+        <h3>Produit 2</h3>
+        <p>Description du produit 2.</p>
+        <span class="prix">€39.99</span>
+      </div>
+      <div class="produit">
+        <img src="../images/femme3.jpg" alt="Produit 3">
+        <h3>Produit 3</h3>
+        <p>Description du produit 3.</p>
+        <span class="prix">€49.99</span>
+      </div>  
+    </section>
+
+    </div>
+  <div id="element3">
+    
+    <section class="produitscontainer">
+      <div class="produit">
+        <img src="../images/femme1.jpg" alt="Produit 1">
+        <h3>Produit 1</h3>
+        <p>Description du produit 1.</p>
+        <span class="prix">€29.99</span>
+      </div>
+      <div class="produit">
+        <img src="../images/femme2.jpg" alt="Produit 2">
+        <h3>Produit 2</h3>
+        <p>Description du produit 2.</p>
+        <span class="prix">€39.99</span>
+      </div>
+      <div class="produit">
+        <img src="../images/femme3.jpg" alt="Produit 3">
+        <h3>Produit 3</h3>
+        <p>Description du produit 3.</p>
+        <span class="prix">€49.99</span>
+      </div>  
+    </section>
+    
+  </div>
+</section>
 
 
 
