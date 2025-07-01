@@ -27,10 +27,10 @@
   <section class="main-content">
 
 
-<!-- <style>.element2 {visibility:hidden};.element3 {visibility:hidden};</style> -->
+<style>.element2 {visibility:hidden};.element3 {visibility:hidden};</style>
 <script type="text/javascript">
-function Cacher(element) { document.getElementById(element).style.visibility = "hidden";    }
-function Visible (element) { document.getElementById(element).style.visibility = "visible"; }
+function Cacher(element) { document.getElementById(element).style.display = "none";}
+function Visible (element) { document.getElementById(element).style.display="block";}
 function Toggle(element)
 {
     if (document.getElementById(element) == document.getElementById('element1')){
@@ -49,21 +49,27 @@ function Toggle(element)
         Cacher('element2');
     }
     else {
-        Visible('element1');
-        Visible('element2');
-        Visible('element3');
+        Cacher('element1');
+        Cacher('element2');
+        Cacher('element3');
+
+        // Visible('element1');
+        // Visible('element2');
+        // Visible('element3');
     }
 }
 window.onload = function () {Cacher('element2');    };
 </script>
-<a href="#" onclick="Toggle('element1');">Afficher element 1</a>
-<a href="#" onclick="Toggle('element2');">Afficher element 2 </a>
-<a href="#" onclick="Toggle('element3');">Afficher element 3 </a>
-
+<section class="optinscontainer">
+<a class="option" href="#" onclick="Toggle('element1');">Afficher element 1</a>
+<a class="option" href="#" onclick="Toggle('element2');">Afficher element 2 </a>
+<a class="option" href="#" onclick="Toggle('element3');">Afficher element 3 </a>
+</section>
 <section class="elements">
   <div id="element1">
 
     <section class="produitscontainer">
+      <br><h3>NOS PRODUITS 1 </h3>
       <div class="produit">
         <img src="../images/femme1.jpg" alt="Produit 1">
         <h3>Produit 1</h3>
@@ -88,6 +94,7 @@ window.onload = function () {Cacher('element2');    };
   <div id="element2">
 
     <section class="produitscontainer">
+      <br><h3>NOS PRODUITS 2 </h3>
       <div class="produit">
         <img src="../images/femme1.jpg" alt="Produit 1">
         <h3>Produit 1</h3>
@@ -112,6 +119,7 @@ window.onload = function () {Cacher('element2');    };
   <div id="element3">
     
     <section class="produitscontainer">
+      <br><h3>NOS PRODUITS 3 </h3>
       <div class="produit">
         <img src="../images/femme1.jpg" alt="Produit 1">
         <h3>Produit 1</h3>
