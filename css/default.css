@@ -61,8 +61,8 @@ h2 {
 /* === NAVIGATION === */
 /* Barre de navigation fixe en haut */
 .navbar {
-    position: fixed;
-    top: 0;
+    /* position: fixed; */
+    /* top: 0; */
     width: 100%;
     background: rgb(1, 154, 236) !important;
     border-bottom: 1px solid #222;

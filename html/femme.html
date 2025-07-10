@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>projet E COMME</title>
     <!-- Lien vers la feuille de style principale -->
-    <link rel="stylesheet" href="../css/femme.css"><link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="/css/femme.css">
+    <link rel="stylesheet" href="../css/default.css">
     <!-- Préconnexion pour accélérer le chargement des polices Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <!-- Importation des polices Inter et Playfair Display depuis Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Inclusion du script JavaScript principal en mode différé -->
@@ -43,139 +43,90 @@
             </ul>
             <!-- Bouton PANIER à droite -->
             <button class="PANIER-btn">PANIER</button>
-            <!-- Bouton hamburger pour le menu mobile -->
+            <!-- Bouton hamburger pour le menu mobile
             <div class="hamburger" id="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div>
+            </div> -->
         </div>
     </nav>
-<<<<<<< HEAD
-    <a href="#" class="cart-btn">PANIER</a>
+    
   </header>
 
-  <!-- Espace vide (bannière ou contenu principal) -->
   <section class="main-content">
 
+<!-- Options -->
+  <section class="optionscontainer">
+    <a class="option" onclick="Toggle('element1')">Afficher élément 1</a>
+    <a class="option" onclick="Toggle('element2')">Afficher élément 2</a>
+    <a class="option" onclick="Toggle('element3')">Afficher élément 3</a>
+  </section>
 
-<style>.element2 {visibility:hidden};.element3 {visibility:hidden};</style>
-<script type="text/javascript">
-function Cacher(element) { document.getElementById(element).style.display = "none";}
-function Visible (element) { document.getElementById(element).style.display="block";}
-function Toggle(element)
-{
-    if (document.getElementById(element) == document.getElementById('element1')){
-        Visible('element1');
-        Cacher('element2');
-        Cacher('element3');
-    }
-    else if (document.getElementById(element) == document.getElementById('element2')){
-        Visible('element2');
-        Cacher('element1');
-        Cacher('element3');
-    }
-    else if (document.getElementById(element) == document.getElementById('element3')){
-        Visible('element3');
-        Cacher('element1');
-        Cacher('element2');
-    }
-    else {
-        Cacher('element1');
-        Cacher('element2');
-        Cacher('element3');
-
-        // Visible('element1');
-        // Visible('element2');
-        // Visible('element3');
-    }
-}
-window.onload = function () {Cacher('element2');    };
-</script>
-<section class="optinscontainer">
-<a class="option" href="#" onclick="Toggle('element1');">Afficher element 1</a>
-<a class="option" href="#" onclick="Toggle('element2');">Afficher element 2 </a>
-<a class="option" href="#" onclick="Toggle('element3');">Afficher element 3 </a>
-</section>
-<section class="elements">
-  <div id="element1">
-
-    <section class="produitscontainer">
-      <br><h3>NOS PRODUITS 1 </h3>
-      <div class="produit">
-        <img src="../images/femme1.jpg" alt="Produit 1">
-        <h3>Produit 1</h3>
-        <p>Description du produit 1.</p>
-        <span class="prix">€29.99</span>
-      </div>
-      <div class="produit">
-        <img src="../images/femme2.jpg" alt="Produit 2">
-        <h3>Produit 2</h3>
-        <p>Description du produit 2.</p>
-        <span class="prix">€39.99</span>
-      </div>
-      <div class="produit">
-        <img src="../images/femme3.jpg" alt="Produit 3">
-        <h3>Produit 3</h3>
-        <p>Description du produit 3.</p>
-        <span class="prix">€49.99</span>
-      </div>  
-    </section>
-
-  </div>
-  <div id="element2">
-
-    <section class="produitscontainer">
-      <br><h3>NOS PRODUITS 2 </h3>
-      <div class="produit">
-        <img src="../images/femme1.jpg" alt="Produit 1">
-        <h3>Produit 1</h3>
-        <p>Description du produit 1.</p>
-        <span class="prix">€29.99</span>
-      </div>
-      <div class="produit">
-        <img src="../images/femme2.jpg" alt="Produit 2">
-        <h3>Produit 2</h3>
-        <p>Description du produit 2.</p>
-        <span class="prix">€39.99</span>
-      </div>
-      <div class="produit">
-        <img src="../images/femme3.jpg" alt="Produit 3">
-        <h3>Produit 3</h3>
-        <p>Description du produit 3.</p>
-        <span class="prix">€49.99</span>
-      </div>  
-    </section>
-
+  <!-- Éléments masquables -->
+  <section class="elements">
+    <div id="element1">
+      <section class="produitscontainer">
+        <div class="produit">
+          <img src="../images/femme1.jpg" alt="Produit 1">
+          <h3>Produit 1</h3>
+          <p>Description du produit 1.</p>
+          <span class="prix">€29.99</span>
+        </div>
+        <div class="produit">
+          <img src="../images/femme2.jpg" alt="Produit 2">
+          <h3>Produit 2</h3>
+          <p>Description du produit 2.</p>
+          <span class="prix">€39.99</span>
+        </div>
+        <div class="produit">
+          <img src="../images/femme3.jpg" alt="Produit 3">
+          <h3>Produit 3</h3>
+          <p>Description du produit 3.</p>
+          <span class="prix">€49.99</span>
+        </div>
+      </section>
     </div>
-  <div id="element3">
-    
-    <section class="produitscontainer">
-      <br><h3>NOS PRODUITS 3 </h3>
-      <div class="produit">
-        <img src="../images/femme1.jpg" alt="Produit 1">
-        <h3>Produit 1</h3>
-        <p>Description du produit 1.</p>
-        <span class="prix">€29.99</span>
-      </div>
-      <div class="produit">
-        <img src="../images/femme2.jpg" alt="Produit 2">
-        <h3>Produit 2</h3>
-        <p>Description du produit 2.</p>
-        <span class="prix">€39.99</span>
-      </div>
-      <div class="produit">
-        <img src="../images/femme3.jpg" alt="Produit 3">
-        <h3>Produit 3</h3>
-        <p>Description du produit 3.</p>
-        <span class="prix">€49.99</span>
-      </div>  
-    </section>
-    
-  </div>
-</section>
-=======
->>>>>>> 8629f006f26ea508e91e990b615231c953714190
+
+    <div id="element2">
+      <section class="produitscontainer">
+        <div class="produit">
+          <h3>Produit 4</h3>
+          <p>Contenu de l’élément 2.</p>
+        </div>
+      </section>
+    </div>
+
+    <div id="element3">
+      <section class="produitscontainer">
+        <div class="produit">
+          <h3>Produit 5</h3>
+          <p>Contenu de l’élément 3.</p>
+        </div>
+      </section>
+    </div>
+  </section>
+
+   
+
+  <!-- Script -->
+  <script>
+    function Cacher(id) {
+      document.getElementById(id).style.display = "none";
+    }
+    function Visible(id) {
+      document.getElementById(id).style.display = "block";
+    }
+    function Toggle(id) {
+      ['element1', 'element2', 'element3'].forEach(function(el) {
+        document.getElementById(el).style.display = (el === id) ? "block" : "none";
+      })    ;
+    }
+    // Masquer tous au départ
+    // window.onload = function () {
+    //   Toggle('');
+    // };
+  </script>
 
 
 
