@@ -2,16 +2,14 @@
 
  body{
       font-family: Arial, sans-serif;
-      margin: 70px 1px;
+      /* margin: 70px 1px;
       padding: 0px;
-      
-      
-display: block;
+      display: block; */
 
        
  
     }
-   button:hover {
+   /* button:hover {
       background-color: #144b58;
     }
 
@@ -36,7 +34,7 @@ text-align: center;
 nav a :hover{
     transform: scale(1.1);
     background-color: black ;
-}
+} */
    ul.menu {
       list-style: none;        
       padding: 0;
@@ -91,11 +89,11 @@ p{
   font-size: larger;
 }
 
-/* === FOOTER === */
+/* === FOOTER ===
 .footer {
     background: rgb(1, 154, 236) !important;
     color: #fff;
-    padding: 30px 0 10px; /* Hauteur réduite */
+    padding: 30px 0 10px; 
     margin-top: auto;
 }
 
@@ -155,9 +153,9 @@ p{
     font-size: 0.95rem;
     border-top: 1px solid #374151;
     color: #bdbdbd;
-}
+} */
 
-/* === ANIMATIONS === */
+/* 
 .fade-in {
     opacity: 0;
     transform: translateY(30px);
@@ -191,7 +189,7 @@ p{
     transform: translateX(0);
 }
 
-/* === RESPONSIVE === */
+
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
@@ -221,7 +219,6 @@ p{
     }
     .nav-menu {
         order: 1;
-        /* ...autres styles responsives déjà présents... */
     }
 }
     .PANIER-btn, .panier-btn {
@@ -345,7 +342,7 @@ p{
     }
 }
 
-/* === UTILITAIRES === */
+
 .text-center {
     text-align: center;
 }
@@ -370,13 +367,11 @@ p{
 .mt-3 { margin-top: 1.5rem; }
 .mt-4 { margin-top: 2rem; }
 
-/* LOGO NAVBAR & FOOTER */
 
 
 
 
-/* === RESPONSIVE DESIGN === */
-/* Tablette */
+
 @media (max-width: 1024px) {
     .container {
         max-width: 900px;
@@ -391,7 +386,7 @@ p{
     }
 }
 
-/* Mobile et tablette */
+
 @media (max-width: 768px) {
     .container {
         max-width: 98%;
@@ -400,7 +395,7 @@ p{
     .section-title {
         font-size: 1.7rem;
     }
-    /* Navigation en colonne sur mobile */
+   
     .nav-container {
         flex-direction: row;
         align-items: center;
@@ -421,7 +416,7 @@ p{
         text-align: left;
         font-size: 1.5rem;
     }
-    /* Menu caché par défaut, affiché avec .active */
+   
     .nav-menu {
         order: 1;
         position: absolute;
@@ -454,7 +449,7 @@ p{
         border-radius: 0;
         text-align: center;
     }
-    /* Bouton panier adapté mobile */
+   
     .panier-btn {
         order: 4;
         margin: 0 10px 0 0;
@@ -463,7 +458,7 @@ p{
         font-size: 1rem;
         padding: 8px 18px;
     }
-    /* Affichage du hamburger sur mobile */
+   
     .hamburger {
         order: 1;
         margin: 0 10px 0 0;
@@ -472,7 +467,7 @@ p{
     }
 }
 
-/* Animation du hamburger en croix quand actif */
+
 .hamburger.active .bar:nth-child(1) {
     transform: translateY(7px) rotate(45deg);
 }
@@ -483,7 +478,7 @@ p{
     transform: translateY(-7px) rotate(-45deg);
 }
 
-/* Très petit écran */
+
 @media (max-width: 480px) {
     .section-title {
         font-size: 1.2rem;
@@ -498,7 +493,7 @@ p{
     }
 }
 
-/* Footer collant */
+
 html, body {
     height: 100%;
 }
@@ -547,4 +542,4 @@ ul menu li a :hover{
       border-radius: 5px;
       font-size: 16px;
       cursor: pointer;
-    }
+    } */
