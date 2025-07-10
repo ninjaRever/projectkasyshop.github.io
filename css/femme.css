@@ -33,6 +33,9 @@
       height: auto;
       border-radius: 5px;
     }
+    .produit p {
+      color: black;
+    }
     /* .elements > div {
       display: none;
     } */
