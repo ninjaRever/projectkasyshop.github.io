@@ -16,13 +16,26 @@
     <script defer src="script.js"></script>
 </head>
 <body>
+    <!-- Section de bienvenue -->
+    <section class="welcome-section">
+        <div class="welcome-content">
+            <h1>Bienvenue sur Kasyshop !</h1>
+            <p>Découvrez la boutique de mode en ligne qui allie tendance, qualité et accessibilité pour toute la famille.</p>
+            <a href="#HOMME" class="welcome-btn">Découvrir la boutique</a>
+            <div class="arrow-down">
+                <svg width="40" height="40" viewBox="0 0 40 40">
+                    <polyline points="10,18 20,28 30,18" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+        </div>
+    </section>
     <!-- Navigation principale du site -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <!-- Logo du site -->
             <div class="nav-logo">
-                <img src="image/logo-mini.png" alt="Mini logo" class="mini-logo">
-                <h2 class="logo-name">Kasyshop</h2>
+                <img src="image/logo4.png" alt="Mini logo" class="mini-logo">
+                <h2 class="logo-name"></h2>
             </div>
             <!-- Menu de navigation -->
             <ul class="nav-menu" id="nav-menu">
@@ -57,7 +70,7 @@
         <!-- Mets ici tout le contenu principal de ta page -->
 
         <!-- Section 1 -->
-        <section class="feature-section fade-in">
+        <section id="HOMME" class="feature-section fade-in">
             <div class="feature-img">
                 <img src="image/man1.jpg" alt="Mode Homme">
             </div>
@@ -113,6 +126,18 @@
                 <h2>Accessoires</h2>
                 <p>Complétez votre look avec notre gamme d’accessoires tendance et originaux pour toutes les envies.</p>
                 <a href="#ACESSOIRE" class="btn btn-primary feature-btn">Voir plus</a>
+            </div>
+        </section>
+
+        <!-- Section Newsletter -->
+        <section class="newsletter-section">
+            <div class="newsletter-container">
+                <h2>Inscrivez-vous à notre newsletter</h2>
+                <p>Recevez nos nouveautés et offres exclusives directement par email.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Votre adresse email" required>
+                    <button type="submit">S'inscrire</button>
+                </form>
             </div>
         </section>
 

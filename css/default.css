@@ -127,7 +127,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background: linear-gradient(135deg, #70f4f8 0%, #44e3e9 0% 100%);
+    background: linear-gradient(90deg, rgb(1, 154, 236), rgb(1, 154, 236));
     color: #fff;
     border: none;
     border-radius: 50px;
@@ -228,6 +228,9 @@ h2 {
     color: #fff;
     padding: 30px 0 10px; /* Hauteur réduite */
     margin-top: auto;
+    border-top: none !important;
+    border-bottom: none ;
+    box-shadow: none ;
 }
 
 .footer-content {
@@ -284,7 +287,7 @@ h2 {
     text-align: center;
     padding-top: 10px;
     font-size: 0.95rem;
-    border-top: 1px solid #374151;
+    border-top: none; /* Supprime la ligne de séparation */
     color: #bdbdbd;
 }
 

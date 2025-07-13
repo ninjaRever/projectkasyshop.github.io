@@ -41,9 +41,15 @@
     margin-bottom: 10px;
 }
 .feature-content p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #222;
-    margin-bottom: 18px;
+    margin-bottom: 28px;
+    background: none;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
+    backdrop-filter: none;
+    display: block;
 }
 .feature-btn {
     width: fit-content;
@@ -102,5 +108,178 @@
     
 }/* Espace en haut pour éviter que l'image ne passe sous la navbar fixe */
 .main-content {
-    padding-top: 90px;
+    padding-top: 110px; /* Ajuste selon la hauteur de ta navbar */
+}
+
+/* Section de bienvenue */
+.welcome-section {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    background: url('../image/font7.jpg') center/cover no-repeat;
+}
+
+
+.welcome-content {
+    position: relative;
+    z-index: 2;
+    border-radius: 18px;
+    padding: 48px 32px;
+    max-width: 500px;
+    margin: auto;
+}
+.welcome-content h1 {
+    font-size: 2.8rem;
+    color: rgb(1, 154, 236);
+    margin-bottom: 18px;
+    font-family: 'Playfair Display', serif;
+}
+.welcome-content p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 28px;
+    position: relative;
+    z-index: 1;
+    background: rgba(0,0,0,0.45);
+    border-radius: 16px;
+    padding: 18px 20px;
+    box-shadow: 0 4px 24px 0 rgba(1,154,236,0.10);
+    backdrop-filter: blur(2px);
+    display: inline-block;
+}
+.welcome-btn {
+    display: inline-block;
+    padding: 14px 38px;
+    font-size: 1.1rem;
+    background: rgb(1, 154, 236);
+    color: #fff;
+    border: none;
+    border-radius: 32px; /* Bord arrondi mais pas cercle */
+    box-shadow: 0 2px 8px #019aec33;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+    font-weight: 600;
+    text-align: center;
+}
+.welcome-btn:hover {
+    background: #fff;
+    color: rgb(1, 154, 236);
+    border: 1.5px solid rgb(1, 154, 236);
+    transform: scale(1.08);
+}
+
+/* Responsive pour la section de bienvenue */
+@media (max-width: 600px) {
+    .welcome-content {
+        padding: 28px 10px;
+    }
+    .welcome-content h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Navbar toujours en haut */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: #fff;
+    box-shadow: 0 2px 12px 0 rgba(1,154,236,0.07);
+}
+
+.mini-logo {
+    width: 70px;   /* augmente la largeur */
+    height: auto;  /* conserve les proportions */
+    max-height: 70px; /* ajuste si besoin */
+}
+
+.arrow-down {
+    margin: 28px auto 0 auto;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: arrow-bounce 1.2s infinite;
+}
+.arrow-down svg polyline {
+    filter: drop-shadow(0 0 8px #fff) drop-shadow(0 0 16px #019aec);
+    animation: arrow-glow 1.2s infinite alternate;
+}
+@keyframes arrow-glow {
+    0% { filter: drop-shadow(0 0 8px #fff) drop-shadow(0 0 16px #019aec); }
+    100% { filter: drop-shadow(0 0 24px #fff) drop-shadow(0 0 32px #019aec); }
+}
+@keyframes arrow-bounce {
+    0% { transform: translateY(0);}
+    50% { transform: translateY(12px);}
+    100% { transform: translateY(0);}
+}
+
+/* Section Newsletter */
+.newsletter-section {
+    background: linear-gradient(90deg, 
+        #019aec 0%, 
+        #fff 25%, 
+        #fff 75%, 
+        #019aec 100%);
+    padding: 48px 0 36px 0;
+    text-align: center;
+}
+.newsletter-container {
+    max-width: 420px;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.95);
+    border-radius: 18px;
+    padding: 32px 20px 28px 20px;
+    box-shadow: 0 4px 24px 0 rgba(1,154,236,0.10);
+}
+.newsletter-container h2 {
+    color: #019aec;
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+}
+.newsletter-container p {
+    color: #222;
+    margin-bottom: 18px;
+}
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.newsletter-form input[type="email"] {
+    padding: 12px 16px;
+    border-radius: 24px;
+    border: 1px solid #019aec;
+    font-size: 1rem;
+    outline: none;
+    flex: 1 1 180px;
+    min-width: 0;
+}
+.newsletter-form button {
+    padding: 12px 28px;
+    border-radius: 24px;
+    border: none;
+    background: #019aec;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+.newsletter-form button:hover {
+    background: #fff;
+    color: #019aec;
+    border: 1.5px solid #019aec;
+    transform: scale(1.05);
 }
