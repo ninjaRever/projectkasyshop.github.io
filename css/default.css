@@ -526,7 +526,7 @@ h2 {
 }
 
 /* Mobile et tablette */
-@media (max-width: 768px) {
+@media (max-width: 876px) {
     .container {
         max-width: 98%;
         padding: 0 6px;
