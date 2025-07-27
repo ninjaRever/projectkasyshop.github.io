@@ -4,6 +4,8 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f7f7f7;
     color: #333;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
 /* SECTIONS CATEGORIES (OPTIONS) */
@@ -17,20 +19,25 @@ body {
     margin: 0 1rem;
     font-size: 1.1rem;
     font-weight: bold;
-    color: rgb(1, 154, 236);
+    color: rgb(255, 255, 255);
+    background-color: rgb(1, 154, 236);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
     cursor: pointer;
-    transition: color 0.3s ease, border-bottom 0.3s ease;
+    transition: color 0.3s ease, border-bottom 0.3s ease, background-color 0.5s ease;
 }
 
 .option:hover {
-    color: #ffb84d;
-    border-bottom: 2px solid #ffb84d;
+    background-color:white;
+    color: rgb(1, 154, 236);
+    border-bottom: 2px solid rgb(1, 154, 236);
 }
 
 /* PRODUITS - CONTAINER */
 .produitscontainer {
+    justify-content: center;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 1.5rem;
     padding: 2rem;
     background-color: #fff;
@@ -46,8 +53,12 @@ body {
     transition: transform 0.3s ease;
 }
 
-.produit:hover {
-    transform: translateY(-10px);
+.pr:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border-radius: 10px;
 }
 
 .produit img {
@@ -57,28 +68,23 @@ body {
     border-radius: 8px;
 }
 
-.produit h3 {
+.produit h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
     color: #000000;
     margin: 0.5rem 0;
-    font-size: 1.1rem;
-}
-
-.produit p {
-  color: #000000;
-  font-size: small;
 }
 
 .produit .prix {
-    color: #d35400;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    color: #000000;
     font-weight: bold;
     font-size: 1rem;
 }
-.button hover{
-  pointer
-}
+
 
 /* BOUTON PERSONNALISÉ */
-.produit button {
+/* .produit button {
     background-color: #118ef5;
     color: #fff;
     border: none;
@@ -88,28 +94,21 @@ body {
     border-radius: 6px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
+} */
 
-.produit button:hover {
+/* .produit button:hover {
     background-color: #a1a1a1;
     border :rgb(1, 154, 236) 7px inset;
-}
+} */
 
 /* RESPONSIVE */
-@media screen and (max-width: 876px) {
-    /* .produitscontainer {
-        padding: 1rem;
-        grid-template-columns: 1fr 1fr;
-    } */
+@media (max-width: 876px) {
+    .produitscontainer {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
 
     .option {
         display: block;
         margin: 1rem auto;
     }
 }
-
-/* @media screen and (max-width: 876px) {
-    .produitscontainer {
-        grid-template-columns: 1fr;
-    }
-} */
