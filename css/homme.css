@@ -61,7 +61,7 @@
     font-weight: 800;
     font-style: inherit;
     text-transform: uppercase;
-    text-shadow: #fdfdfc;
+    text-shadow: #929283;
     border-radius: 50px;
       
     
@@ -69,10 +69,12 @@
   h1{
     color: #118ef5;
     text-align: center;
-}
+    cursor: pointer; 
+  }
+    
 .zoom:hover {
     transform: scale(1.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s  ease-in-out;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     border-radius: 10px;
@@ -84,7 +86,7 @@ button:hover{
     background-color: #118ef5;
     color: #0e64c7;
     cursor: pointer;
-    transition: background-color 0.3s ease;;
+    transition: background-color 0.3s ease-in-out;
     border-radius:10px ;
 }
  
@@ -94,8 +96,28 @@ button:hover{
     height: 65%;
     border-radius: 10px;
     transition: 0.3s
-
-     
 };
 
+/* Ajoute ceci dans ton fichier CSS (ex : homme.css) */
+.filtre-boutons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0 40px 0;
+}
+
+.filtre-boutons button {
+    background: #222;
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 25px;
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.filtre-boutons button:hover {
+    background: #444;
+}
 
